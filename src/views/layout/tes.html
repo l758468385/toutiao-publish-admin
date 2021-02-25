@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        button {
+            height: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="http://cdn.staticfile.org/moment.js/2.24.0/moment.min.js"></script>
+    <div class="box">
+        <button>按钮1</button>
+        <button>按钮2</button>
+    </div>
+    <script>
+        const time1 = [
+            "Thu Feb 04 2021 12:00:00 GMT+0800 (中国标准时间)",
+
+            "Mon Mar 01 2021 00:00:00 GMT+0800 (中国标准时间)",
+        ];
+
+        const ntime = time1.map((item, index, array) => {
+            console.log(item);
+            return moment(item).format("YYYY-MM-DD");
+        });
+        console.log(ntime);
+        var data = [0, 1, 2, 3];
+        var arrayFilter = data.filter(function(item) {
+            return item;
+        });
+        console.log(arrayFilter);
+    </script>
+</body>
+
+</html>

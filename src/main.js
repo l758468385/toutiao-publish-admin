@@ -11,6 +11,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 加载全局样式文件
 import './styles/index.css'
 
+// 加载iconfont图标文件
+// import './assets/icon/iconfont.css'
+
+
 
 /* 注册全局element-ui组件 */
 Vue.use(ElementUI)
